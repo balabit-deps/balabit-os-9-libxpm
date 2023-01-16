@@ -1,3 +1,22 @@
+libxpm (1:3.5.12-1ubuntu0.22.04.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: CPU-consuming loop on width of 0
+    - debian/patches/CVE-2022-44617-1.patch: add extra checks to
+      src/data.c, src/parse.c.
+    - debian/patches/CVE-2022-44617-2.patch: prevent a double free in the
+      error code path in src/create.c.
+    - CVE-2022-44617
+  * SECURITY UPDATE: Infinite loop on unclosed comments
+    - debian/patches/CVE-2022-46285.patch: handle unclosed comments in
+      src/data.c.
+    - CVE-2022-46285
+  * SECURITY UPDATE: compression commands depend on $PATH
+    - debian/patches/CVE-2022-4883.patch: don't rely on $PATH to find the
+      commands in src/RdFToI.c, src/WrFFrI.c.
+    - CVE-2022-4883
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Jan 2023 12:38:49 -0500
+
 libxpm (1:3.5.12-1build2) jammy; urgency=high
 
   * No change rebuild for ppc64el baseline bump.
