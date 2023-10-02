@@ -3,3 +3,9 @@ CVE-2022-44617-1.patch
 CVE-2022-44617-2.patch
 CVE-2022-46285.patch
 CVE-2022-4883.patch
+0001-Fix-CVE-2023-43788-Out-of-bounds-read-in-XpmCreateXp.patch
+0003-Fix-CVE-2023-43789-Out-of-bounds-read-on-XPM-with-co.patch
+0004-test-Add-test-case-for-CVE-2023-43786-stack-exhausti.patch
+0005-Avoid-CVE-2023-43786-stack-exhaustion-in-XPutImage.patch
+0006-test-Add-test-case-for-CVE-2023-43787-integer-overfl.patch
+0007-Avoid-CVE-2023-43787-integer-overflow-in-XCreateImag.patch

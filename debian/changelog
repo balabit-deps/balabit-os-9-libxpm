@@ -1,3 +1,24 @@
+libxpm (1:3.5.12-1ubuntu0.22.04.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: stack exhaustion from infinite recursion in
+    PutSubImage() in libx11
+    - d/p/0004-test-Add-test-case-for-CVE-2023-43786-stack-exhausti.patch
+    - d/p/0005-Avoid-CVE-2023-43786-stack-exhaustion-in-XPutImage.patch
+    - CVE-2023-43786
+  * SECURITY UPDATE: integer overflow in XCreateImage() leading to a heap
+    overflow in libx11
+    - d/p/0006-test-Add-test-case-for-CVE-2023-43787-integer-overfl.patch
+    - d/p/0007-Avoid-CVE-2023-43787-integer-overflow-in-XCreateImag.patch
+    - CVE-2023-43787
+  * SECURITY UPDATE: out of bounds read in XpmCreateXpmImageFromBuffer()
+    - d/p/0001-Fix-CVE-2023-43788-Out-of-bounds-read-in-XpmCreateXp.patch
+    - CVE-2023-43788
+  * SECURITY UPDATE: out of bounds read on XPM with corrupted colormap
+    - d/p/0003-Fix-CVE-2023-43789-Out-of-bounds-read-on-XPM-with-co.patch
+    - CVE-2023-43789
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 02 Oct 2023 16:10:52 -0400
+
 libxpm (1:3.5.12-1ubuntu0.22.04.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: CPU-consuming loop on width of 0
