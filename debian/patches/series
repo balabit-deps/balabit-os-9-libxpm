@@ -10,3 +10,4 @@ CVE-2022-4883.patch
 0006-test-Add-test-case-for-CVE-2023-43787-integer-overfl.patch
 0007-Avoid-CVE-2023-43787-integer-overflow-in-XCreateImag.patch
 CVE-2026-4367.patch
+CVE-2026-94287.patch
